@@ -4,9 +4,9 @@ import { ReactComponent as LogIn } from './svg/log-in.svg';
 
 
 const IconsTypes = {
-    x : X,
-    back : Back,
-    login: LogIn,
+  x : X,
+  back : Back,
+  login: LogIn,
 };
 
 export default IconsTypes;

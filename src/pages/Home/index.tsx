@@ -1,16 +1,16 @@
-import { useContext, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
-import { Header } from "../../components/Header";
-import { InfoCardAge } from "../../components/InfoCardAge";
-import { InfoCard } from "../../components/InfoCardCity";
-import { UserContext } from "../../contexts/user.context";
-import { students } from "../../mock/students";
+import { useContext, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { Header } from '../../components/Header';
+import { InfoCardAge } from '../../components/InfoCardAge';
+import { InfoCard } from '../../components/InfoCardCity';
+import { UserContext } from '../../contexts/user.context';
+import { students } from '../../mock/students';
 import {
   ContainerHome,
   ContentCardAge,
   ContentCardCity,
   ContentHome,
-} from "./styled";
+} from './styled';
 
 export function Home() {
   const navigate = useNavigate();
@@ -18,7 +18,7 @@ export function Home() {
 
   useEffect(() => {
     if (!isAuthenticated) {
-      navigate("/");
+      navigate('/');
     }
   }, [isAuthenticated]);
 
@@ -50,24 +50,24 @@ export function Home() {
 
         <ContentHome>
 
-            <ContentCardCity>
-              <h2>Quantidade de aluno por cidade:</h2>
-              {studentsPerCity.map((city, i) => {
-                return (
-                    <InfoCard city={city[0]} theAmount={city[1]} />
-                );
-              })}
-            </ContentCardCity>
+          <ContentCardCity>
+            <h2>Quantidade de aluno por cidade:</h2>
+            {studentsPerCity.map((city, i) => {
+              return (
+                <InfoCard key={String(i)} city={city[0]} theAmount={city[1]} />
+              );
+            })}
+          </ContentCardCity>
 
 
 
-            <ContentCardAge>
-              <h2>Curiosidade sobre os alunos:</h2>
-              <InfoCardAge
-                middleAges={averageAge}
-                percentage={Number(over21YearsOldPercentage)}
-              />
-            </ContentCardAge>
+          <ContentCardAge>
+            <h2>Curiosidade sobre os alunos:</h2>
+            <InfoCardAge
+              middleAges={averageAge}
+              percentage={Number(over21YearsOldPercentage)}
+            />
+          </ContentCardAge>
 
         </ContentHome>
       </ContainerHome>

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import background from '../../assets/Icon/image/background.webp'
+import background from '../../assets/Icon/image/background.webp';
 
 export const ContainerHome = styled.div`
     display: flex;
@@ -8,15 +8,15 @@ export const ContainerHome = styled.div`
     align-items: center;
     padding-bottom: 2rem;
 
-    background: url('${background}') ; 
+    background: url('${background}') ;
     background-repeat: no-repeat;
-    background-position: center; 
+    background-position: center;
 
     >h1{
       font-size: 2.1rem;
       font-weight: bold;
     }
-    
+
     h2{
       font-size: 1.5rem;
       font-weight: 600;
@@ -31,7 +31,7 @@ export const ContentHome = styled.section`
       @media (max-width: 600px) {
       flex-direction: column;
   }
-`
+`;
 
 export const ContentCardCity = styled.div`
       display: flex;
