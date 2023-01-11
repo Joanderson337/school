@@ -5,7 +5,7 @@ import Colors from '../../styles/theme';
 export const ContainerHome = styled.div`
    display: flex;
    justify-content: center;
-    gap: 20px;
+    gap: 2rem;
    align-items: center;
 
   > P{

@@ -15,8 +15,8 @@ export const ContainerCard = styled.div`
   gap: 2rem;
 
 
-  border-radius: 10px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 1rem;
+  box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
   background-color: red;
   background: url('${background}');
   background-size: cover;

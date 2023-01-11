@@ -4,8 +4,8 @@ import Colors from '../../styles/theme';
 
 
 export const ContainerCard = styled.div`
-  height: 18rem;
-  width: 22rem;
+  height: 8rem;
+  width: 10rem;
 
   display: flex;
   flex-direction: column;
@@ -13,10 +13,11 @@ export const ContainerCard = styled.div`
   align-items: center;
   text-align: center;
   gap: 2rem;
+  margin: 0.5rem;
 
 
-  border-radius: 10px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 1rem;
+  box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
   background-color: red;
   background: url('${background}');
   background-size: cover;
