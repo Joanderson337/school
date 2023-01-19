@@ -12,7 +12,7 @@ export const students: Student[] = [
     id: 2,
     name: 'Jane',
     age: 21,
-    city: 'Los Angeles',
+    city: 'Los Angeles',  
     hobbies: ['Reading', 'Writing'],
   },
   {
