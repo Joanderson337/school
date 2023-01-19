@@ -19,14 +19,14 @@ export function Header() {
     <ContainerHeader>
       <ContentHeader>
         <Details>
-          <button type="button" onClick={handleHome}>
+          <button data-testid="home" type="button" onClick={handleHome}>
            Escola estrela do saber
           </button>
-          <button type="button" onClick={() => signOut(auth)}>
+          <button data-testid="close" type="button" onClick={() => signOut(auth)}>
             Sair <Icon name="x" size={18} />
           </button>
         </Details>
-        <Club onClick={handleClub}>Clubes dos alunos</Club>
+        <Club data-testid="club" onClick={handleClub}>Clubes dos alunos</Club>
       </ContentHeader>
     </ContainerHeader>
   );
